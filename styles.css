@@ -261,6 +261,12 @@ ul {
   background-color: #F0E2E7;
 }
 
+.aura-hero-media picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .aura-hero-img {
   width: 100%;
   height: 100%;
@@ -938,12 +944,12 @@ ul {
   }
 
   .aura-header-container {
-    height: 68px;
+    height: 74px;
     padding: 0 18px;
   }
 
   .aura-logo-img {
-    height: 38px;
+    height: 48px;
     width: auto;
   }
 
@@ -995,21 +1001,26 @@ ul {
     padding: 45px 0;
   }
 
+  .aura-hero-img {
+    object-position: center top;
+  }
+
   .aura-hero-media::after {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(240, 226, 231, 0.88) 0%,
-      rgba(240, 226, 231, 0.72) 60%,
-      rgba(240, 226, 231, 0.45) 100%
+      rgba(240, 226, 231, 0.25) 0%,
+      rgba(240, 226, 231, 0.55) 50%,
+      rgba(240, 226, 231, 0.94) 100%
     );
     z-index: 1;
   }
 
   .aura-hero-overlay-content {
     padding: 20px 16px;
+    align-items: flex-end;
   }
 
   .hero-eyebrow {
@@ -1035,18 +1046,20 @@ ul {
   }
 
   .hero-button-row {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     gap: 10px;
   }
 
   .btn-aura-gold,
   .btn-aura-ghost {
-    width: 100%;
+    width: auto;
+    min-width: 135px;
+    padding: 12px 20px;
+    font-size: 0.72rem;
     text-align: center;
     justify-content: center;
-    padding: 13px 20px;
-    font-size: 0.72rem;
   }
 
   /* Secciones y Encabezados */
@@ -1084,6 +1097,14 @@ ul {
     padding: 22px 18px;
   }
 
+  .btn-add-bag {
+    width: auto;
+    min-width: 180px;
+    max-width: 240px;
+    align-self: center;
+    padding: 12px 22px;
+  }
+
   /* Banner Personalizados */
   .aura-custom-banner {
     height: auto;
@@ -1115,11 +1136,14 @@ ul {
   }
 
   .btn-custom-banner {
-    width: 100%;
+    width: auto;
+    min-width: 200px;
+    max-width: 260px;
+    align-self: center;
+    padding: 13px 24px;
+    font-size: 0.72rem;
     text-align: center;
     justify-content: center;
-    padding: 14px 20px;
-    font-size: 0.72rem;
   }
 
   /* Footer */
